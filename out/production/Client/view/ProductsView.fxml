@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ProductViewController">
+   <children>
+      <VBox layoutX="31.0" layoutY="167.0" prefHeight="301.0" prefWidth="153.0" spacing="12.0">
+         <children>
+            <Label text="Categories">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="frozen" mnemonicParsing="false" text="Frozen Food">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="seafood" mnemonicParsing="false" text="Meat &amp; Seafood">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="diary" mnemonicParsing="false" text="Diary">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="bakery" mnemonicParsing="false" text="Bakery">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="beverages" mnemonicParsing="false" text="Beverages">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="snacks" mnemonicParsing="false" text="Snacks">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="fruits" mnemonicParsing="false" text="Fruits">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="vegetables" mnemonicParsing="false" text="Vegetables">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font></CheckBox>
+         </children>
+      </VBox>
+      <Label layoutX="191.0" layoutY="83.0" text="Products">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="bagButton" layoutX="855.0" layoutY="34.0" mnemonicParsing="false" onAction="#checkBagStatus" text="Bag ( 0 )" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="40.0">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="380.0" layoutY="259.0" prefHeight="377.0" prefWidth="759.0" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="40.0">
+        <columns>
+          <TableColumn fx:id="productName" prefWidth="458.0" text="Name" />
+          <TableColumn fx:id="productId" minWidth="0.0" prefWidth="100.0" text="ID" />
+            <TableColumn fx:id="quantity" prefWidth="100.0" text="Quantity" />
+            <TableColumn fx:id="price" prefWidth="100.0" text="Starting from" />
+        </columns>
+      </TableView>
+      <Button layoutX="31.0" layoutY="27.0" mnemonicParsing="false" text="&lt;" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0" onAction="#backButton">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="855.0" layoutY="104.0" mnemonicParsing="false" onAction="#loginButton" text="Login" AnchorPane.rightAnchor="40.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

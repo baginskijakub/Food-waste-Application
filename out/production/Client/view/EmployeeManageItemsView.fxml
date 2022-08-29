@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.EmployeeManageItemsController">
+   <children>
+      <VBox alignment="CENTER" layoutX="107.0" layoutY="12.0" prefHeight="468.0" prefWidth="920.0" spacing="10.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <HBox prefHeight="76.0" prefWidth="919.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#goBackButton" text="&lt;">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="268.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <TableView fx:id="table" prefHeight="435.0" prefWidth="920.0">
+               <columns>
+                  <TableColumn fx:id="nameOfProduct" prefWidth="307.1587104797363" text="Product name" />
+                  <TableColumn fx:id="productNumber" prefWidth="146.34129333496094" text="Product number" />
+                  <TableColumn fx:id="expiration" prefWidth="204.5028076171875" text="Expiration date" />
+                  <TableColumn fx:id="quantity" prefWidth="156.33782958984375" text="Quantity" />
+                  <TableColumn fx:id="price" prefWidth="104.5078125" text="Current price" />
+               </columns>
+            </TableView>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#removeButton" text="Remove item" textFill="RED">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="25.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#updateButton" text="Update item">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label fx:id="orderLabel" layoutX="473.0" layoutY="38.0" text="Items">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

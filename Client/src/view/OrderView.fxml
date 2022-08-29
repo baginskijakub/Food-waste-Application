@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.OrderViewController">
+   <children>
+      <VBox alignment="CENTER" layoutX="107.0" layoutY="12.0" prefHeight="520.0" prefWidth="658.0" spacing="10.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <HBox prefHeight="76.0" prefWidth="919.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#homeButton" text="&lt;">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="268.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <TableView fx:id="table" prefHeight="435.0" prefWidth="880.0">
+               <columns>
+                  <TableColumn fx:id="nameOfProduct" prefWidth="285.5" text="Product name" />
+                  <TableColumn fx:id="quantity" prefWidth="136.5" text="quantity" />
+                  <TableColumn fx:id="expiration" prefWidth="254.5" text="Expiration date" />
+                  <TableColumn fx:id="price" prefWidth="162.5" text="Price" />
+               </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <Label fx:id="orderLabel" layoutX="395.0" layoutY="32.0" text="Order number 1690">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

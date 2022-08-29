@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.EditProductViewController">
+   <children>
+      <Button layoutX="124.0" layoutY="65.0" mnemonicParsing="false" onAction="#backButton" text="&lt;" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <VBox layoutX="572.0" layoutY="92.0" prefHeight="301.0" prefWidth="153.0" spacing="12.0">
+         <children>
+            <Label text="Categories">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="frozen" mnemonicParsing="false" text="Frozen Food">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="seafood" mnemonicParsing="false" text="Meat &amp; Seafood">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="diary" mnemonicParsing="false" text="Diary">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="bakery" mnemonicParsing="false" text="Bakery">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="beverages" mnemonicParsing="false" text="Beverages">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="snacks" mnemonicParsing="false" text="Snacks">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="fruits" mnemonicParsing="false" text="Fruits">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="vegetables" mnemonicParsing="false" text="Vegetables">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </VBox>
+      <VBox layoutX="286.0" layoutY="67.0" prefHeight="375.0" prefWidth="245.0">
+         <children>
+            <Label text="Product name">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="16.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="productNameField">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </TextField>
+            <Label text="Product number">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="productNumberField">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </TextField>
+            <Label text="Default price">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="16.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="priceField">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </TextField>
+            <Label text="Expiration date">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="16.0" />
+               </VBox.margin>
+            </Label>
+            <DatePicker fx:id="dateField" prefHeight="38.0" prefWidth="301.0" />
+            <Label text="Quantity">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="16.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="quantityField">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+      <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="481.0" layoutY="449.0" text="errorLabel" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="426.0" layoutY="484.0" mnemonicParsing="false" onAction="#editProduct" prefHeight="45.0" prefWidth="183.0" text="Update" AnchorPane.leftAnchor="426.0" AnchorPane.rightAnchor="391.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
